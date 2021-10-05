@@ -1,8 +1,141 @@
-<html>
-<h1>
-ESTE ES EL TITULO PRINCIPAL DE MI PÁGINA
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi web personal</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
 <body>
-<marquee> ESTE TEXTO VA VOLANDO.... </marquee>
+    <div id="contenedor">
+       
+        <div id="menu">
+               <a href="misdatos.html">MIS DATOS</a>
+               <a href="misestudios.html">MIS ESTUDIOS</a>
+               <a href="misaficiones.html">MIS AFICIONES</a> 
+        </div>
+       
+       
+        <div id="texto">
+           
+        <br>
+            <ul id="lista">
+                <li class="colortexto">Me llamo Celia Sánchez Fernández</li>
+                <li class="colortexto">Tengo 27 años</li>
+                <li class="colortexto">Nací en León en el año 1993</li>
+                <li class="colortexto">Vivo en Madrid</li>
+                <li class="colortexto">Soy de España</li>
+                <li class="colortexto">Mi correo es csanchezfdez@hotmail.com</li>
+            </ul>
+        </div>
+       
+       
+        <div id="imagen">
+            <img src="foto.jpg" alt="Mi foto"> 
+            
+        </div>
+       
+    </div>
+    <style>
+		*{margin:0;}
+
+#contenedor {
+    width: 750px;
+    height: 400px;
+    background-color: rgba(73, 237, 218, 0.69);
+    margin: auto;
+    
+}
+
+#menu{
+    width: 750px;
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 18px 0;
+    background-color: rgba(37, 162, 138, 0.7)
+}
+
+a{
+    text-decoration: none;
+    margin: 40px; 
+    -webkit-text-stroke: 0.5px #134e48;
+    color: white;
+}
+/*pagina misdatos*/
+ 
+#texto{
+    margin:  40px;
+    background-color: white;
+    text-align: left;
+    width: 330px;
+    height: 122px;
+    border: 1px solid #2cb9b9;
+    border-radius: 20px;
+    font-family: monospace; 
+    position: absolute;
+    top: 125px;
+    
+}
+#lista{
+    list-style: square;
+}
+.colortexto{
+    color: #217e74;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius:200px;
+    position: relative; 
+    top: 60px;
+    left: -50px
+    
+    
+}
+#imagen{
+    width: 200px;
+    height: 200px;
+    float: right; 
+}
+
+/*Página mis estudios*/
+#textoestudios{
+    margin:  40px;
+    background-color: white;
+    text-align: left;
+    width: 330px;
+    height: 130px;
+    border: 1px solid #2cb9b9;
+    border-radius: 20px;
+    font-family: monospace;
+    position: absolute;
+    top: 125px;
+}
+
+
+/*Página mis aficiones*/
+
+#textomisaficiones{
+    margin:  40px;
+    background-color: white;
+    text-align: left;
+    width: 330px;
+    height: 185px;
+    border: 1px solid #2cb9b9;
+    border-radius: 20px;
+    font-family: monospace; 
+    position: absolute;
+    top: 90px;
+}
+
+#listadeportes{
+    list-style: none;
+}
+
+
+	</style>
+    
 </body>
 </html>
